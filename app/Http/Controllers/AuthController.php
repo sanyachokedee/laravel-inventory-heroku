@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;  //ใช้ model ชื่อ User
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -53,7 +53,7 @@ class AuthController extends Controller
 
         // Check email
         // อ่านว่า user(model)
-        $user = User::where('email', $fields['email'])->first();
+            $user = User::where('email', $fields['email'])->first();
 
         // Check password ref: https://youtu.be/2zrsP2HRFoM?t=6308
         // if ความหมาย ถ้าไม่พบอีเมล์ ไม่เจอ password
