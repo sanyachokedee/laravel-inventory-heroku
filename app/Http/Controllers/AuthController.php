@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\user;  //ใช้ model ชื่อ user
+use App\Models\User;  //ใช้ model ชื่อ User
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
